@@ -1,13 +1,63 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family:  'Poppins', sans-serif;
+}
+/* -----------------Navbar-------------------*/
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: linear-gradient(to right,rgba(30, 0, 22, 0.838),rgba(73, 1, 63, 0.948),rgba(48, 48, 48, 0.918));
+  position: fixed;
+  z-index : 10000;
+  width : 100%;
+}
+.navbar .left{
+  width : 190px;
+  display: flex;
+  justify-content: space-between;
+  align-items :baseline;
+  color: white;
+}
+.navbar .left img{
+  width : 70px;
+  height: 70px;
+  position: absolute;
+  left: 37px;
+  top : -1px;
+}
+.navbar .right{
+  display: flex;
+}
+.nav-links ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding : 5px;
+}
+.nav-links ul li a{
+  text-decoration: none;
+  color: white;
+}
+.nav-links ul{
+  list-style-type: none;
+}
+.nav-links ul li{
+  padding: 14px 27px;
+  margin : 0 10px;
+} 
+.icon{
+  color: White;
+}
+.nav-links ul li:hover{
+  background: linear-gradient(135deg,rgb(213, 0, 213),rgb(96, 0, 117));
+  border-radius: 25px;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+/*-----------------------Home-------------------*/
+
