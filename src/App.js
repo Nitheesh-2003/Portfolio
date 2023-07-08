@@ -20,12 +20,11 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-      <Element name='home-page'><About></About></Element>
-      {/* <Element name='home-page'><Home></Home></Element>
+      <Element name='home-page'><Home></Home></Element>
       <Element name='about-page'><About></About></Element>
       <Element name='skills-page'><Skills></Skills></Element>
       <Element name='project-page'><Projects></Projects></Element>
-      <Element name='contact-page'><Contact></Contact></Element> */} 
+      <Element name='contact-page'><Contact></Contact></Element>
     </div>
   );
 }
