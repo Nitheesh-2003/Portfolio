@@ -1,0 +1,184 @@
+*{ 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.about{
+    width : 100%;
+    min-height: 110vh;
+    background: linear-gradient(to bottom,#ace9fc,#f7fcdf,rgb(168, 240, 254)); 
+    padding:20px 10px;
+    position: relative;
+}
+.about *{
+    color : black;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 30px;
+    text-align: left;
+}
+.about-head{
+    z-index: 1000;
+    position: absolute;
+    top: 15px;
+    margin-left: 47%;
+}
+.ab-left{
+    position: relative;
+    width: 40%;
+    margin: 10px 45px;
+    z-index : 1000;
+}
+.ab-right{
+    position: relative;
+    width: 47%;
+    margin: 10px 25px;
+    z-index:5000;
+}
+.ab-left h2{
+    display: inline-block;
+    margin: 0px 0px 20px 0px;
+}
+.ab-table table{
+    min-width: 600px;
+    padding: 10px 0;
+    margin: 0 0 10px 0;
+    word-wrap: bre ak-word;
+}
+.ab-table table td{
+    padding: 10px;
+    max-width: 1%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ab-table table tr{
+  min-width: 1px;
+}
+.ab-motion-text{
+    background: linear-gradient(135deg,rgb(254, 141, 254),rgb(213, 0, 213),rgb(235, 108, 226),rgb(132, 1, 161),white);
+    background-clip: text;
+    color: transparent;
+}
+.about-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width : 30%;
+}
+.ab-box{
+    margin: 20px 10px;
+    width : 95%;
+    display : flex;
+    flex-direction: column;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.1);
+    overflow: hidden;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    position: relative;
+}
+.ab-box span{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    border-radius: 10px;
+}
+.about-card{
+    padding: 20px 10px;
+}
+.ab-card-content h3{
+    margin-bottom: 10px;
+}
+.ab-right h2{
+    margin-top : 10px;
+}
+.cal{
+    margin: 10px 30px 30px 10px;
+}
+
+.ab-box span:nth-child(1){
+    background : rgb(0, 0, 0);
+    top : 0;
+    left : -49.7%;
+    animation: 5s anim linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes anim {
+    0%{
+        top : -49.7%;
+        left : -49.7%;
+    }
+    25%{
+        top : -49.7%;
+        left : 99.4%;
+    }
+    50%{
+        top : 99.4%;
+        left : 99.4%;
+    }
+    75%{
+        top : 99.4%;
+        left : -49.7%;
+    }
+    100%{
+        top : -49.7%;
+        left : -49.7%;
+    }
+}
+
+.ab-box span:nth-child(2){
+    background : rgb(6, 6, 6);
+    bottom : 0;
+    right : -49.9%;
+    animation: 5s anim2 linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes anim2 {
+    0%{
+        bottom : -49.7%;
+        right : -49.7%;
+    }
+    25%{
+        bottom : -49.7%;
+        right : 99.4%;
+    }
+    50%{
+        bottom : 99.4%;
+        right : 99.7%;
+    }
+    75%{
+        bottom : 99.4%;
+        right : -49.7%;
+    }
+    100%{
+        bottom : -49.7%;
+        right : -49.7%;
+    }
+}
+@media screen and (max-width : 1180px) {
+    .about-content{
+        flex-direction: column;
+    }
+    .ab-left,.ab-right{
+        width : 75%;
+        margin : 30px 0 20px 0;
+    }
+}
+@media screen and (max-width : 850px){
+    .ab-left,.ab-right{
+        width: 87%;
+    }
+} 
+@media screen and (max-width : 690px){
+    
+} 
+.ab-box{
+    font-style: ;
+}

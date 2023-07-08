@@ -1,15 +1,26 @@
 import '../Skills/Skills.css'
-import Tilt from 'react-tilt'
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Skills = () => {
     return ( 
         <div className="skills">
-            <h2>SKILLS</h2>
+            <div className="color"></div>
+            <div className="color"></div>
+            <div className="color"></div>
+            <div className="color"></div>
             <div className="sk-content">
+                <h1>SKILLS</h1>
                 <div className="sk-box">
-                    <div className="sk-left">
-                        <h2>Technical Skills</h2>
-                        <Tilt className='tilt-container'>
-                        <div className="sk-left-content tilt-child">
+                    
+                    <div className="sk-left" data-aos="zoom-in">
+                        <div class="lg-square b1"></div>
+                        <div class="lg-square b2"></div>
+                        <div class="lg-square b3"></div>
+                        <div class="lg-square b4"></div>
+                        <div class="lg-square b5"></div>
+                        <div className="sk-left-content">
+                        <h2 className='tech-head'>Technical Skills</h2>
                             <div className="skill-bar">
                                 <div className="label">
                                     <span>HTML</span>
@@ -94,12 +105,15 @@ const Skills = () => {
                             </div>
                             
                         </div>
-                        </Tilt>
                     </div>
-                    <div className="sk-right">
-                        <h2 className='professional'>Professional Skills</h2>
+                    <div className="sk-right" data-aos="zoom-in">
+                        <div class="lg-square b1"></div>
+                        <div class="lg-square b2"></div>
+                        <div class="lg-square b3"></div>
+                        <div class="lg-square b4"></div>
+                        <div class="lg-square b5"></div>
                         <div className="sk-right-content">
-                            
+                        <h2 className='professional'>Professional Skills</h2>
                             <div className="circle-card">
                                 <div className="card">
                                     <div className="dot"></div>
