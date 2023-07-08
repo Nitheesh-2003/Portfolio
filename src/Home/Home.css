@@ -8,6 +8,7 @@
     min-height: 105vh;
     position : relative;
     background: linear-gradient(to bottom,#ace9fc,#f7fcdf,rgb(168, 240, 254)); 
+    padding: 0 85px;
   }
 .home  *{
     color : black;
@@ -24,9 +25,7 @@
 .home-left{
     z-index: inherit;
     color: black;
-    text-align: left;
-    margin:0 30px 0 70px;
-    width : 40%;
+    flex: 1;
     margin-top: 50px;
 }
 .home-left h1{
@@ -79,6 +78,7 @@
 .home-right{
     position : relative;
     margin-top: 50px;
+    flex: 1;
 }
 .home-right img{
     border-radius: 100% 70% 100% 70%;
@@ -265,16 +265,10 @@
     .home .content{
         flex-direction: column;
     }
-    .home-left{
-        width : 70%;
-    }
 }
 @media screen and (max-width : 650px) {
     .home-left h1{
         font-size : 40px;
-    }
-    .home-left{
-        width : 80%;
     }
     .contact-me{
         font-size : 13px;

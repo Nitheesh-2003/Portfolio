@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     font-family:  'Poppins', sans-serif;
+    text-align: justify;
 }
 .cc-contact *{
     color: black;
@@ -121,7 +122,6 @@
     color:White;
     background-color: rgb(7, 7, 7);
     border : none;
-    width : 50%;
     border-radius: 7px;
     padding:15px;
     margin: auto;

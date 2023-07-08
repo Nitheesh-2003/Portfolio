@@ -13,7 +13,9 @@ const About = () => {
             <div className="color"></div>
             <div className="color"></div>
             <div className="color"></div>
-            <h2 className='about-head'>ABOUT ME</h2>
+            <div className="about-head">
+                <h2>ABOUT ME</h2>
+            </div>
             <div className="about-content">
                 <div className="ab-left " data-aos="fade">
                 <div class="lg-square b2"></div>
@@ -44,7 +46,9 @@ const About = () => {
                             </tr>
                         </table>
                     </div>
-                    <button className='cc-button ab-button '>Download CV</button>
+                   <div className='download-cv'>
+                    <a href="#"><button className='cc-button ab-button '>Download CV</button></a>
+                   </div>
                 </div>
                 <div className="ab-right" data-aos="zoom-in">
                 <div class="lg-square b1"></div>

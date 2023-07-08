@@ -358,3 +358,9 @@
       transform : translateY(40px);
   }
 }
+
+@media screen and (max-width : 1180px) {
+  .sk-box{
+    flex-direction: column;
+}
+}
