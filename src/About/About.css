@@ -7,8 +7,8 @@
     width : 100%;
     min-height: 110vh;
     background: linear-gradient(to bottom,#ace9fc,#f7fcdf,rgb(168, 240, 254)); 
-    padding:20px 10px;
     position: relative;
+    padding-bottom: 70px;
 }
 .about *{
     color : black;
