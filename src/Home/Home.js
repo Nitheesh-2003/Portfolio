@@ -14,7 +14,7 @@ const Home = () => {
                     <h3 className='second-head'>I am a</h3>
                     <h3 className='second-head hx'><Typewriter options={{autoStart : true,loop :true,delay :50,strings:["Web Developer","Software Developer","Web Designer"]}}/></h3>
                     <p>Highly creative and detail-oriented web designer with a passion for creating visually appealing and user-friendly websites. Motivated web developer with a passion for learning and developing new skills. Quick learner, able to adapt to new technologies and programming languages</p>
-                    <a href='#contact-page'><button className='contact-me'>Contact Me</button></a>
+                    <a href='https://drive.google.com/file/d/1oXm_lpWOyVuo7_qJTwz7vgNtOoPQlMzc/view?usp=sharing' target='_blank' rel="noopener noreferrer"><button className='contact-me'>Download CV</button></a>
                 </div>
                 <div className="home-right">
                 <div class="ho-square b1"></div>
