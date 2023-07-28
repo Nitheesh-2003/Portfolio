@@ -5,7 +5,6 @@ import Home from './Home/Home';
 import Skills from './Skills/Skills';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
-import {Routes,Route} from "react-router-dom"
 import { Element } from 'react-scroll';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
@@ -14,7 +13,6 @@ function App() {
     AOS.init({
       duration: 800, 
       easing: 'ease-in-out', 
-      once: true 
     });
   }, []);
   return (

@@ -164,7 +164,7 @@
 .cc-contact-icon{
     width: 80%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin-left : -20px;
 }

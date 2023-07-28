@@ -1,7 +1,5 @@
-import {AiOutlineFormatPainter} from 'react-icons/ai'
 import image from '../Asserts/N-logo1.png'
 import './Navbar.css'
-import { Link } from 'react-router-dom'
 import {FaHome} from 'react-icons/fa'
 import {BsFillChatRightTextFill} from 'react-icons/bs'
 import { AiFillProject} from 'react-icons/ai'

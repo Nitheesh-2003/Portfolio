@@ -2,8 +2,6 @@ import { DiReact } from 'react-icons/di';
 import {IoLogoNodejs,IoLogoFirebase} from 'react-icons/io5'
 import '../Projects/Projects.css'
 import { Link } from 'react-router-dom';
-import React, { useEffect } from 'react';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
 const Projects = () => {
     return ( 

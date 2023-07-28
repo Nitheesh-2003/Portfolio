@@ -3,17 +3,49 @@ import {AiOutlineMail, AiOutlinePhone,AiOutlineInstagram} from 'react-icons/ai'
 import {GoLocation} from 'react-icons/go'
 import {FiGithub} from 'react-icons/fi'
 import {GrLinkedinOption} from 'react-icons/gr'
-import React, { useEffect } from 'react';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
+
+    
     const email="svnitheesh2003@gmail.com";
-    const subject = 'Subject of the email';
-    const body = 'Body of the email';
     const address="Chothavilai"
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+          .sendForm('service_pjxxxip', 'template_1v1po2e', form.current, 'N3X1ewi-3qjeqGOVB')
+          .then((result) => {
+            console.log(result.text);
+            toast.success('Email sent successfully!', {
+              position: 'top-right',
+              autoClose: 3000, 
+              hideProgressBar: true,
+              closeOnClick: true,
+              pauseOnHover: true,
+            });
+          })
+          .catch((error) => {
+            console.error(error.text);
+            toast.error('Failed to send email. Please try again.', {
+              position: 'top-right',
+              autoClose: 3000, 
+              hideProgressBar: true,
+              closeOnClick: true,
+              pauseOnHover: true,
+            });
+          });
+        };
     return ( 
         <div className="cc-contact" id='contact-page' >
+            <ToastContainer />
             <div className="color"></div>
             <div className="color"></div>
             <div className="color"></div>
@@ -27,13 +59,13 @@ const Contact = () => {
                 <div className="cc-head">
                     <h2>Just Say Hello</h2>
                 </div>
-                <div className="cc-form">
-                    <input type="text" name="Name" placeholder='Your Name' />
-                    <input type="text" name="Email" placeholder='Your Email' />
-                    <input type="text" name="Subject" placeholder='Enter the Subject..' />
-                    <textarea name="Message"  cols="25" rows="5" placeholder='Your Message.......'></textarea>
+                <form className="cc-form" ref={form} onSubmit={sendEmail}>
+                    <input type="text" name="user_name" placeholder='Your Name' />
+                    <input type="text" name="user_email" placeholder='Your Email' />
+                    <input type="text" name="user_subject" placeholder='Enter the Subject..' />
+                    <textarea name="message"  cols="25" rows="5" placeholder='Your Message.......'></textarea>
                     <button className="cc-button">Send Me</button>
-                </div>
+                </form>
             </div>
             <div className="cc-right" data-aos="zoom-in">
                     <div class="lg-square b1"></div>

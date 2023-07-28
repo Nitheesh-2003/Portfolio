@@ -73,7 +73,7 @@
 .pj-icon-box{
     width: 65%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     margin: 10px 0; 
 }
